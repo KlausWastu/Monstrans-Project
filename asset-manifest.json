@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KlausWastu/Monstrans-Project.git/static/css/main.c4189bf4.css",
+    "main.js": "/KlausWastu/Monstrans-Project.git/static/js/main.351f42d6.js",
+    "static/js/453.ede31023.chunk.js": "/KlausWastu/Monstrans-Project.git/static/js/453.ede31023.chunk.js",
+    "index.html": "/KlausWastu/Monstrans-Project.git/index.html",
+    "main.c4189bf4.css.map": "/KlausWastu/Monstrans-Project.git/static/css/main.c4189bf4.css.map",
+    "main.351f42d6.js.map": "/KlausWastu/Monstrans-Project.git/static/js/main.351f42d6.js.map",
+    "453.ede31023.chunk.js.map": "/KlausWastu/Monstrans-Project.git/static/js/453.ede31023.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4189bf4.css",
+    "static/js/main.351f42d6.js"
+  ]
+}
