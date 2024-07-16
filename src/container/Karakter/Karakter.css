@@ -1,0 +1,194 @@
+.Karakter {
+  font-weight: bold; /* Membuat teks menjadi tebal */
+  margin: 20px 0; /* Memberi margin atas dan bawah */
+  margin-left: 20px; /* Memberi margin kiri */
+  font-size: 24px; /* Opsional: Ubah ukuran font untuk mempercantik */
+  color: #3d4a6e; /* Opsional: Ubah warna teks untuk mempercantik */
+}
+.karakter-detail {
+  font-weight: bold;
+  margin: 20px 0;
+  margin-left: 20px;
+  font-size: 24px;
+  color: #3d4a6e;
+  text-align: center; /* Center the title */
+}
+
+.karakter-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default satu kolom untuk mobile-first */
+  gap: 20px; /* Jarak antar kolom */
+  padding: 0 20px; /* Menambahkan padding kanan dan kiri */
+}
+
+.karakter-detail-container {
+  max-width: 200px; /* Contoh lebar maksimum yang dapat Anda sesuaikan */
+  margin: 20px auto; /* Memastikan container di tengah dengan margin auto */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .karakter-container {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk tablet */
+    padding: 0 40px; /* Menambah padding kanan dan kiri untuk tablet */
+  }
+
+  .karakter-detail-container {
+    max-width: 300px; /* Sesuaikan lebar maksimum untuk tablet */
+    margin: 20px auto; /* Memastikan container tetap di tengah */
+    padding: 20px;
+  }
+
+  .detail-button {
+    width: 120px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .assign-location-container {
+    background-color: transparent; /* Hapus warna latar belakang abu-abu untuk mobile */
+    box-shadow: none; /* Hapus bayangan untuk mobile */
+    padding: 0; /* Hapus padding untuk mobile */
+    margin-top: 10px; /* Sesuaikan margin atas untuk mobile */
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px; /* Lebar maksimum input untuk desktop */
+    margin: 0 auto; /* Memastikan input berada di tengah */
+  }
+
+  .input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .assign-location-button {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .karakter-container {
+    grid-template-columns: repeat(4, 1fr); /* Empat kolom untuk desktop */
+    padding: 0 60px; /* Menambah padding kanan dan kiri untuk desktop */
+  }
+
+  .karakter-detail-container {
+    max-width: 400px; /* Sesuaikan lebar maksimum untuk tablet */
+    margin: 20px auto; /* Memastikan container tetap di tengah */
+    padding: 30px;
+  }
+
+  .detail-button {
+    width: 140px;
+    padding: 14px;
+  }
+}
+
+.karakterPost {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: white; /* Tambahkan latar belakang putih */
+}
+
+.idKarakter,
+.nameKarakter,
+.statusKarakter,
+.speciesKarakter,
+.typeKarakter,
+.genderKarakter,
+.episodeKarakter,
+.originKarakter,
+.locationKarakter,
+.assign-label {
+  margin-bottom: 8px; /* Kurangi margin agar lebih compact */
+  font-size: 14px; /* Kurangi ukuran font agar lebih compact */
+  font-weight: bold;
+  color: #3d4a6e;
+}
+
+.detail-button {
+  background-color: rgba(3, 2, 41, 0.747);
+  color: white;
+  width: 100px;
+  border-radius: 30px;
+  padding: 5px; /* Tambahkan padding untuk lebih nyaman di klik */
+  text-align: center; /* Pusatkan teks di dalam tombol */
+  display: inline-block; /* Pastikan tombol tetap inline */
+  margin: 10px auto; /* Atur margin atas dan bawah, serta pusatkan secara horizontal */
+}
+
+.detail-button,
+.detail-button-home,
+.detail-button-update :hover {
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  gap: 10px; /* Jarak antara tombol */
+  margin-top: 20px; /* Margin atas */
+}
+
+.detail-button-home {
+  background-color: blue;
+  color: white;
+  width: 100px;
+  border-radius: 30px;
+  padding: 10px; /* Tambahkan padding untuk lebih nyaman di klik */
+  text-align: center; /* Pusatkan teks di dalam tombol */
+}
+.detail-button-update {
+  background-color: green;
+  color: white;
+  width: 150px;
+  border-radius: 30px;
+  padding: 10px; /* Tambahkan padding untuk lebih nyaman di klik */
+  text-align: center; /* Pusatkan teks di dalam tombol */
+}
+
+.assign-label {
+  font-weight: bold;
+  text-align: left; /* Sesuaikan posisi teks label */
+}
+
+.assign-location-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.assign-location-button:hover {
+  background-color: darkgreen;
+}
+
+.assign-success-notification {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

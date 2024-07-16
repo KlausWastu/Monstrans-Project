@@ -1,0 +1,54 @@
+/* CSS untuk tampilan mobile */
+.title-header,
+.notify {
+  margin: 10px 0;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #3d4a6e;
+}
+
+.notify {
+  opacity: 0.7;
+}
+
+.character-location-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Contoh lebar maksimum yang dapat Anda sesuaikan */
+  margin: 20px auto; /* Memastikan container di tengah dengan margin auto */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Query media untuk iPad */
+@media (min-width: 768px) {
+  .title-header,
+  .notify {
+    font-size: 16px; /* Ukuran teks untuk iPad */
+  }
+}
+
+/* Query media untuk desktop */
+@media (min-width: 1024px) {
+  .title-header,
+  .notify {
+    font-size: 20px; /* Ukuran teks untuk desktop */
+  }
+
+  .character-location-container {
+    display: flex;
+    flex-direction: row; /* Menata data ke kanan */
+    justify-content: space-between; /* Memberi ruang antara elemen */
+    max-width: 20%;
+    align-items: center; /* Memusatkan elemen vertikal */
+    padding: 20px; /* Padding umum */
+    margin: 20px; /* Margin di sekitar container */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: white; /* Tambahkan latar belakang putih */
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  }
+}
